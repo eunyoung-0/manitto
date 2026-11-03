@@ -1,9 +1,8 @@
-// Firebase 콘솔 > 프로젝트 설정 > 내 앱(웹) 에서 복사한 값을 붙여 넣으세요.
 export const firebaseConfig = {
-  apiKey: "여기에-붙여넣기",
-  authDomain: "",
-  projectId: "",
-  storageBucket: "",
-  messagingSenderId: "",
-  appId: ""
+  apiKey: "AIzaSyAk6KcNKDBZLyYhXPdDH54oxTcevKZvDVE",
+  authDomain: "manitto-411b8.firebaseapp.com",
+  projectId: "manitto-411b8",
+  storageBucket: "manitto-411b8.firebasestorage.app",
+  messagingSenderId: "529924016039",
+  appId: "1:529924016039:web:fa718956ae12d469945882"
 };
