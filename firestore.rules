@@ -1,0 +1,14 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // 마니또 방 데이터만 읽고 쓸 수 있어요. 방 주소(#뒤 코드)를 아는 사람만 들어올 수 있어요.
+    // 뽑기 결과와 쪽지 내용은 앱에서 암호화한 뒤 저장해요.
+    match /rooms/{room}/{document=**} {
+      allow read, write: if true;
+    }
+    // 그 밖의 경로는 모두 막아요.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
